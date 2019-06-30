@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SaveCatch"
+             x:Class="SaveCatch.MainPage">
+
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.9*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Label Grid.Column="1" Grid.Row="0" Style="{StaticResource labelStyle}"  HorizontalTextAlignment="Center">Save Your Catch</Label>
+        <StackLayout Grid.Column="1" Grid.Row="1">
+            <Button x:Name="myCatches" Clicked="MyCatches_Clicked" Style="{StaticResource buttonStyle}" Text="Moje połowy"></Button>
+            <Button x:Name="about" Clicked="About_Clicked" Style="{StaticResource buttonStyle}" Text="O aplikacji"></Button>
+        </StackLayout>
+    </Grid>
+    
+
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveCatch.AddNewFishPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dodaj złowioną rybę"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="entrySpecies" Placeholder="Wpisz gatunek ryby..." />
+            <Entry x:Name="entryWeight" Keyboard="Numeric" Placeholder="Wpisz wagę ryby w gramach..." />
+            <Entry x:Name="entryLength" Keyboard="Numeric" Placeholder="Wpisz długość ryby w centymetrach..."/>
+            <Button x:Name="addFishButton" Text="Dodaj do połowów" Clicked="AddFishButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveCatch.InfoPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0.9*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <StackLayout Grid.Column="1" Grid.Row="1" >
+                <Label Text="O Apce:" FontSize="18" FontAttributes="Bold"></Label>
+                <Label Text="Aplikacja umożliwia zapisanie swoich zdobyczy podczas wypadu na ryby" FontSize="20" ></Label>
+                <Label Text="Twórca:" FontSize="18" FontAttributes="Bold"></Label>
+                <Label Text="Szymon Domalik" FontSize="20" ></Label>
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveCatch.AddNewCatchPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dodaj nowy połów"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="entryName" Placeholder="Wpisz nazwę łowiska..." />
+            <Entry x:Name="entryLocation" Placeholder="Wpisz nazwę miejscowości..." />
+            <DatePicker x:Name="entryDate" />
+            <Entry x:Name="entryType" Placeholder="Wpisz typ połowu..."/>
+            <Button x:Name="addCatchButton" Text="Dodaj do połowów" Clicked="AddCatchButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
